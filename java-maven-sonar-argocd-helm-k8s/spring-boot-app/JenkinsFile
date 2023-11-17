@@ -29,7 +29,7 @@ pipeline {
         }
       }
     }
-    stage('Build and Push Docker Image') {5
+    stage('Build and Push Docker Image') {
       environment {
         DOCKER_IMAGE = "sujaysuj/ultimate-cicd:${BUILD_NUMBER}"
         // DOCKERFILE_LOCATION = "java-maven-sonar-argocd-helm-k8s/spring-boot-app/Dockerfile"
